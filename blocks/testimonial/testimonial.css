@@ -1,4 +1,4 @@
-/* #CODE:Testimonial */
+/* #CSS:Testimonial */
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -51,7 +51,7 @@
     text-align: justify !important;
 }
 
-/*#CODE:Stars */
+/*#CSS:Stars */
 .stars {
     color: #f0932b;
     margin-bottom: 20px;
@@ -85,7 +85,7 @@
 
 }
 
-/*#CODE:Read more  */
+/*#CSS:Read more  */
 p.read-more__text {
     margin-bottom: 10px !important;
 }
@@ -149,7 +149,7 @@ p.read-more__text {
     -webkit-line-clamp: var(--line-clamp);
 }
 
-/* #CODE:Mobile */
+/* #CSS:Mobile */
 @media screen and (max-width: 960px) {
     .col {
         flex: 50%;
