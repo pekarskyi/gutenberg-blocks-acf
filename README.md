@@ -13,7 +13,7 @@
 
 *Starting in WordPress 5.8 release, we encourage using the block.json metadata file as the canonical way to register block types.* (developer.wordpress.org)
 
-## Блок "Отзывы клиентов" в виде сетки
+## Блок "Отзывы клиентов" в виде сетки - blocks/testimonial
 
 В отзыве можно указать: текст отзыва, автора, должность, фото и поставить оценку.
 Минимальное количество отзывов в блоке - 1. А максимальное - 6 (конечно же, можно указать любое другое число).
