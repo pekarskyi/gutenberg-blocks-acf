@@ -7,7 +7,8 @@
 
 Создание блока - дочерняя тема.
 
-Регистрация пользовательского блока в файле functions.php.
+Регистрация пользовательского блока в файле:
+- /theme-child/functions.php
 
 Метаданные блока и регистрация типов блоков в файле block.json.
 
@@ -20,14 +21,10 @@
 
 ### Структура файлов блока:
 
-Файл /blocks/testimonial/import-fields/testimonials-repeater.json - файл для импорта группы полей.
-
-Папка /blocks/testimonial/screenshots/ - скриншоты блока
-
-Файл /blocks/testimonial/block.json - метаданные блока Gutenberg
-
-Файл /blocks/testimonial/testimonial.php - файл шаблона, используемый для рендеринга блока
-
-Файл /blocks/testimonial/testimonial.css - CSS-файл со стилями блока
+- Файл /blocks/testimonial/import-fields/testimonials-repeater.json - файл для импорта группы полей.
+- Папка /blocks/testimonial/screenshots/ - скриншоты блока
+- Файл /blocks/testimonial/block.json - метаданные блока Gutenberg
+- Файл /blocks/testimonial/testimonial.php - файл шаблона, используемый для рендеринга блока
+- Файл /blocks/testimonial/testimonial.css - CSS-файл со стилями блока
 
 Для каждого репитера генерируется случайное число - идентификатор. Это необходимо для нормальной работы ссылки "Показать все" (раскрыть полный текст отзыва).
