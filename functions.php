@@ -23,11 +23,11 @@ function child_enqueue_styles() {
  }
 
 //#CODE:wp_enqueue
- function custom_scripts_and_styles() {
- wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/blocks/testimonial/testimonial.css', array());
- wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/blocks/testimonial/moretext.js');
- }
- add_action( 'wp_enqueue_scripts', 'custom_scripts_and_styles' );
+//  function custom_scripts_and_styles() {
+//  wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/blocks/testimonial/testimonial.css', array());
+//  wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/blocks/testimonial/moretext.js');
+//  }
+//  add_action( 'wp_enqueue_scripts', 'custom_scripts_and_styles' );
 
 //#CODE:ACF_Field_Unique_ID
  require_once get_stylesheet_directory() . '/inc/ACF_Field_Unique_ID.php';
