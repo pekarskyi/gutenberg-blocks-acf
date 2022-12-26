@@ -18,11 +18,11 @@
 В отзыве можно указать: текст отзыва, автора, должность, фото и поставить оценку.
 Минимальное количество отзывов в блоке - 1. А максимальное - 6 (конечно же, можно указать любое другое число).
 
-### Структура файлов блока
+### Структура файлов блока:
 
-Папка /blocks/testimonial/import-fields/ - файл json для импорта группы полей.
+Файл /blocks/testimonial/import-fields/testimonials-repeater.json - файл для импорта группы полей.
 
-Папка /blocks/testimonial/screenshots/
+Папка /blocks/testimonial/screenshots/ - скриншоты блока
 
 Файл /blocks/testimonial/block.json - метаданные блока Gutenberg
 
