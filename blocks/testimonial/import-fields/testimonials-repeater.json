@@ -1,0 +1,185 @@
+[
+    {
+        "key": "group_63a8a0d7588e7",
+        "title": "Testimonial Repeater",
+        "fields": [
+            {
+                "key": "field_63a8a1463afb0",
+                "label": "Отзывы",
+                "name": "otzyvy",
+                "aria-label": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "pagination": 0,
+                "min": 1,
+                "max": 6,
+                "collapsed": "",
+                "button_label": "Добавить отзыв",
+                "rows_per_page": 20,
+                "sub_fields": [
+                    {
+                        "key": "field_63a8a15f3afb1",
+                        "label": "<span style=\"color:red; font-weight:500;\">Текст отзыва<\/span>",
+                        "name": "tekst",
+                        "aria-label": "",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "placeholder": "",
+                        "new_lines": "",
+                        "parent_repeater": "field_63a8a1463afb0"
+                    },
+                    {
+                        "key": "field_63a8a16b3afb2",
+                        "label": "Автор",
+                        "name": "avtor",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_63a8a1463afb0"
+                    },
+                    {
+                        "key": "field_63a8a1743afb3",
+                        "label": "Должность",
+                        "name": "dolzhnost",
+                        "aria-label": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "parent_repeater": "field_63a8a1463afb0"
+                    },
+                    {
+                        "key": "field_63a8a1843afb4",
+                        "label": "Фото",
+                        "name": "foto",
+                        "aria-label": "",
+                        "type": "image",
+                        "instructions": "Загружайте квадратные изображения",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "library": "all",
+                        "min_width": 100,
+                        "min_height": 100,
+                        "min_size": "",
+                        "max_width": 1000,
+                        "max_height": 1000,
+                        "max_size": "",
+                        "mime_types": "jpg,png,webp",
+                        "preview_size": "thumbnail",
+                        "parent_repeater": "field_63a8a1463afb0"
+                    },
+                    {
+                        "key": "field_63a8a19d3afb5",
+                        "label": "Оценка <span class=\"dashicons dashicons-star-empty\"><\/span>",
+                        "name": "rejting",
+                        "aria-label": "",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "1": "1",
+                            "2": "2",
+                            "3": "3",
+                            "4": "4",
+                            "5": "5"
+                        },
+                        "default_value": 5,
+                        "return_format": "value",
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "parent_repeater": "field_63a8a1463afb0"
+                    },
+                    {
+                        "key": "field_63a8e2b259d26",
+                        "label": "ID репитера",
+                        "name": "unique_id",
+                        "aria-label": "",
+                        "type": "unique_id",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "acf-hidden",
+                            "id": ""
+                        },
+                        "parent_repeater": "field_63a8a1463afb0"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/testimonial"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]
