@@ -11,19 +11,19 @@
 
 Метаданные блока и регистрация типов блоков в файле block.json.
 
-Starting in WordPress 5.8 release, we encourage using the block.json metadata file as the canonical way to register block types. (developer.wordpress.org)
+*Starting in WordPress 5.8 release, we encourage using the block.json metadata file as the canonical way to register block types.* (developer.wordpress.org)
 
 ## Блок "Отзывы клиентов" в виде сетки
 
 В отзыве можно указать: текст отзыва, автора, должность, фото и поставить оценку.
 Минимальное количество отзывов в блоке - 1. А максимальное - 6 (конечно же, можно указать любое другое число).
 
-Папка <b>import-fields</b> - файл json для импорта группы полей.
+Папка **import-fields** - файл json для импорта группы полей.
 
-<b>block.json</b> - метаданные блока Gutenberg
+**block.json** - метаданные блока Gutenberg
 
-<b>testimonial.php</b> - файл шаблона, используемый для рендеринга блока
+**testimonial.php** - файл шаблона, используемый для рендеринга блока
 
-<b>testimonial.css</b> - CSS-файл со стилями блока
+**testimonial.css** - CSS-файл со стилями блока
 
 Для каждого репитера генерируется случайное число - идентификатор. Это необходимо для нормальной работы ссылки "Показать все" (раскрыть полный текст отзыва).
