@@ -1,4 +1,4 @@
-# Gutenberg Blocks ACF - Создание блоков Gutenberg с помощью ACF PRO
+# Создание блоков Gutenberg с помощью ACF PRO
 
 Конфигурация сайта:
 - WordPress 5.8 - 6 >=
@@ -6,9 +6,12 @@
 - Gutenberg
 
 Создание блока - дочерняя тема.
-Регистрация пользовательского блока в файле functions.php
-Метаданные блока и регистрация типов блоков в файле block.json
-Starting in WordPress 5.8 release, we encourage using the block.json metadata file as the canonical way to register block types.
+
+Регистрация пользовательского блока в файле functions.php.
+
+Метаданные блока и регистрация типов блоков в файле block.json.
+
+Starting in WordPress 5.8 release, we encourage using the block.json metadata file as the canonical way to register block types. (developer.wordpress.org)
 
 ## Блок "Отзывы клиентов" в виде сетки
 
