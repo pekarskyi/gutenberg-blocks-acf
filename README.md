@@ -28,7 +28,7 @@
 - /blocks/testimonial/testimonial.css - CSS-файл со стилями блока
 - /blocks/testimonial/testimonial.css - минифицированный CSS-файл со стилями блока
 
-### Дополнительные решения
+### Дополнительные решения:
 
 1. Вывод звездного рейтинга - решение описано [здесь](https://github.com/Dizer7/wp_star_rating).
 
