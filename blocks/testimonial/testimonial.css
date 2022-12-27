@@ -1,12 +1,12 @@
 /* #CSS:Testimonial */
-.row {
+.row-testimonial-grid {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-.col {
+.col-testimonial-grid {
     flex: 33%;
     max-width: 33%;
     box-sizing: border-box;
@@ -14,14 +14,14 @@
 
 }
 
-.testimonial {
+.testimonial-item {
     background: #fff;
     padding: 40px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     text-align: center;
 }
 
-.testimonial img {
+.testimonial-item img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -30,21 +30,25 @@
     border: 1px solid #FFF;
 }
 
-.name {
+.testimonial-item-name {
     margin: 20px 0 0 0;
     color: #000;
     font-size: 16px;
     font-weight: 500;
     text-transform: none;
+    line-height: 1.2;
 }
 
-.position {
-    margin: 0 0 10px 0;
+.testimonial-item-position {
+    margin: 10px 0 10px 0;
     font-size: 14px;
     color: #8f8f8f;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: none;
 }
 
-.testimonial p {
+.testimonial-item p {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.4;
@@ -52,9 +56,21 @@
 }
 
 /*#CSS:Stars */
-.stars {
+.testimonial-item-stars {
     color: #f0932b;
     margin-bottom: 20px;
+}
+
+.screen-reader-text {
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
+    word-wrap: normal !important;
 }
 
 .star-rating .star-full:before {
@@ -86,30 +102,30 @@
 }
 
 /*#CSS:Read more  */
-p.read-more__text {
+p.testimonial-item-read-more__text {
     margin-bottom: 10px !important;
 }
 
-.read-more {
+.testimonial-item-read-more {
     --line-clamp: 4;
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.read-more__text {
+.testimonial-item-read-more__text {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp);
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-.read-more__label {
+.testimonial-item-read-more__label {
     margin-left: auto;
     margin-right: auto;
 }
 
-.read-more__checkbox {
+.testimonial-item-read-more__checkbox {
     clip: rect(0 0 0 0);
     clip-path: inset(100%);
     height: 1px;
@@ -119,7 +135,7 @@ p.read-more__text {
     width: 1px;
 }
 
-.read-more__checkbox~.read-more__label {
+.testimonial-item-read-more__checkbox~.testimonial-item-read-more__label {
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
@@ -132,46 +148,46 @@ p.read-more__text {
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 } */
 
-.read-more__checkbox:hover~.read-more__label {
+.testimonial-item-read-more__checkbox:hover~.testimonial-item-read-more__label {
     text-decoration: none;
 }
 
-.read-more__checkbox~.read-more__label::before {
+.testimonial-item-read-more__checkbox~.testimonial-item-read-more__label::before {
     content: attr(data-read-more);
 }
 
-.read-more__checkbox:checked~.read-more__label::before {
+.testimonial-item-read-more__checkbox:checked~.testimonial-item-read-more__label::before {
     content: attr(data-read-less);
 }
 
-.read-more__checkbox:checked~.read-more__text {
+.testimonial-item-read-more__checkbox:checked~.testimonial-item-read-more__text {
     --line-clamp: none;
     -webkit-line-clamp: var(--line-clamp);
 }
 
 /* #CSS:Mobile */
 @media screen and (max-width: 960px) {
-    .col {
+    .col-testimonial-grid {
         flex: 50%;
         max-width: 50%;
     }
 }
 
 @media screen and (max-width: 520px) {
-    .col {
+    .col-testimonial-grid {
         flex: 100%;
         max-width: 100%;
     }
 }
 
 @media screen and (max-width: 820px) {
-    .testimonial p {
+    .testimonial-item p {
         text-align: left !important;
     }
 }
 
 @media screen and (min-width: 960px) and (max-width: 1200px) {
-    .testimonial p {
+    .testimonial-item p {
         text-align: left !important;
     }
 }
