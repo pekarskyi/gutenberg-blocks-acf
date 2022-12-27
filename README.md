@@ -14,7 +14,7 @@
 
 *Starting in WordPress 5.8 release, we encourage using the block.json metadata file as the canonical way to register block types.* (developer.wordpress.org)
 
-## Блок "Отзывы клиентов" в виде сетки - blocks/testimonial
+## 1. Блок "Отзывы клиентов" в виде сетки - blocks/testimonial
 
 В отзыве можно указать: текст отзыва, автора, должность, фото и поставить оценку.
 Минимальное количество отзывов в блоке - 1. А максимальное - 6 (конечно же, можно указать любое другое число).
@@ -28,3 +28,5 @@
 - Файл /blocks/testimonial/testimonial.css - CSS-файл со стилями блока
 
 Для каждого репитера генерируется случайное число - идентификатор. Это необходимо для нормальной работы ссылки "Показать все" (раскрыть полный текст отзыва).
+
+Библиотека для генерирования уникального ID и описание установки вы сможете найти [здесь][https://github.com/Dizer7/ACF-Unique-ID-Field]
