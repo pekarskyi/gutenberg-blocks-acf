@@ -1,9 +1,9 @@
 {
     "name": "acf/testimonial",
     "title": "Отзывы",
-    "description": "Максимально 3 отзыва",
+    "description": "Отзывы клиентов",
     "style": [ "file:./testimonial.min.css" ],
-    "category": "formatting",
+    "category": "inwebpress",
     "icon": "admin-comments",
     "keywords": ["testimonial", "quote"],
     "acf": {

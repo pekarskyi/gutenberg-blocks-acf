@@ -12,6 +12,21 @@ function child_enqueue_styles() {
  * Add custom functions here
  */
 
+ //#PHP:Custom category block
+ function register_layout_category( $categories ) {
+ $categories[] = array(
+ 'slug' => 'inwebpress',
+ 'title' => 'InwebPress Blocks'
+ );
+ return $categories;
+ }
+
+ if ( version_compare( get_bloginfo( 'version' ), '5.8', '>=' ) ) {
+ add_filter( 'block_categories_all', 'register_layout_category' );
+ } else {
+ add_filter( 'block_categories', 'register_layout_category' );
+ }
+
 //#CODE:Rating_frontend
  require_once ABSPATH .'wp-admin/includes/template.php';
  add_action('wp_enqueue_scripts', function(){ wp_enqueue_style('dashicons'); });

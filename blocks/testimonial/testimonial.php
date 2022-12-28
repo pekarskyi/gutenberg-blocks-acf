@@ -10,6 +10,7 @@
         // loop through the rows of data
         while ( have_rows('otzyvy') ) : the_row(); 
         
+            $main_path = get_stylesheet_directory_uri(); //http://domain.com/wp-content/themes/theme-child
             $testimonial_text = get_sub_field( 'tekst' ) ?: 'Your testimonial here...';
             $testimonial_author = get_sub_field( 'avtor' ) ?: 'Author name';
             $testimonial_position = get_sub_field( 'dolzhnost' ) ?: 'Author role';
@@ -27,14 +28,18 @@
     <div class="col-testimonial-grid">
         <div class="testimonial-item">
 
-            <img src="<?php echo esc_url($thumb); ?>" width="100" height="100"
+            <?php if($thumb == '') { ?>
+            <img src="<?php echo $main_path; ?>/blocks/testimonial/images/star.png"
                 alt="<?php echo esc_attr($testimonial_author); ?>" />
+            <?php } else { ?>
+            <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($testimonial_author); ?>" />
+            <?php }  ?>
 
             <div class="testimonial-item-name"><?php echo esc_attr($testimonial_author); ?></div>
             <div class="testimonial-item-position"><?php echo esc_attr($testimonial_position); ?></div>
 
             <div class="testimonial-item-stars">
-                <?php wp_star_rating( ['rating'=>$testimonial_rating, 'type'=>'rating', 'number'=>5 ] );?>
+                <?php wp_star_rating( ['rating'=>$testimonial_rating, 'type'=>'rating', 'number'=>0 ] );?>
             </div>
 
             <div class="testimonial-item-read-more" style="--line-clamp: 4">
