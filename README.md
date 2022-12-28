@@ -26,7 +26,8 @@
 - /blocks/testimonial/block.json - метаданные блока Gutenberg
 - /blocks/testimonial/testimonial.php - файл шаблона, используемый для рендеринга блока
 - /blocks/testimonial/testimonial.css - CSS-файл со стилями блока
-- /blocks/testimonial/testimonial.css - минифицированный CSS-файл со стилями блока
+- /blocks/testimonial/testimonial.min.css - минифицированный CSS-файл со стилями блока
+- /blocks/testimonial/images/ - изображения по умолчанию
 
 ### Дополнительные решения:
 
@@ -58,7 +59,7 @@ if ( version_compare( get_bloginfo( 'version' ), '5.8', '>=' ) ) {
 	add_filter( 'block_categories', 'register_layout_category' );
 }
 
-//Rating_frontend
+//#PHP:Rating_frontend
 require_once ABSPATH .'wp-admin/includes/template.php';
 add_action('wp_enqueue_scripts', function(){ wp_enqueue_style('dashicons'); });
 
@@ -68,7 +69,7 @@ function register_acf_blocks() {
 register_block_type( __DIR__ . '/blocks/testimonial' );
 }
 
-//ACF_Field_Unique_ID
+//#PHP:ACF_Field_Unique_ID
 require_once get_stylesheet_directory() . '/inc/ACF_Field_Unique_ID.php';
 PhilipNewcomer\ACF_Unique_ID_Field\ACF_Field_Unique_ID::init();
 ```
@@ -78,3 +79,12 @@ PhilipNewcomer\ACF_Unique_ID_Field\ACF_Field_Unique_ID::init();
 ```php
 /blocks/testimonial/import-fields/testimonials-repeater.json
 ```
+
+5. Вставляем блок "Отзывы" на страницу, заполняем поля.
+Допустимое число отзывов в одном блоке 1-6.
+Если фото/картинку автора отзыва не указали, то будет отображаться картинка по умолчанию.
+
+### Примечание
+
+Блок подтягивает стили из минифицированного файла /blocks/testimonial/testimonial.min.css.
+Поэтому, внося изменения в файл /blocks/testimonial/testimonial.css не забывайте его потом сжимать.
