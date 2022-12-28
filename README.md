@@ -87,4 +87,4 @@ PhilipNewcomer\ACF_Unique_ID_Field\ACF_Field_Unique_ID::init();
 ### Примечание
 
 Блок подтягивает стили из минифицированного файла /blocks/testimonial/testimonial.min.css.
-Поэтому, внося изменения в файл /blocks/testimonial/testimonial.css не забывайте его потом сжимать.
+Поэтому, внося изменения в файле /blocks/testimonial/testimonial.css не забывайте его потом сжимать.
