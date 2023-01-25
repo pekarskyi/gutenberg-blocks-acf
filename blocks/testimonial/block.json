@@ -2,16 +2,21 @@
     "name": "acf/testimonial",
     "title": "Отзывы",
     "description": "Отзывы клиентов",
-    "style": [ "file:./testimonial.min.css" ],
+    "style": [
+        "file:./testimonial.css"
+    ],
     "category": "inwebpress",
     "icon": "admin-comments",
-    "keywords": ["testimonial", "quote"],
+    "keywords": [
+        "testimonial",
+        "quote"
+    ],
     "acf": {
         "mode": "preview",
         "renderTemplate": "testimonial.php"
     },
     "supports": {
-    "reusable": false
-},
+        "reusable": false
+    },
     "align": "full"
 }
