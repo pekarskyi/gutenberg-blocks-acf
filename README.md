@@ -16,7 +16,7 @@
 
 ## 1. Блок "Отзывы клиентов" в виде сетки - blocks/testimonial
 
-![Скриншот](https://github.com/Dizer7/gutenberg-blocks-acf/raw/master/image/image.png)
+![Скриншот](https://github.com/Dizer7/gutenberg-blocks-acf/blob/master/Screenshot_testimonials.jpg)
 
 В отзыве можно указать: текст отзыва, автора, должность, фото и поставить оценку.
 Минимальное количество отзывов в блоке - 1. А максимальное - 6 (конечно же, можно указать любое другое число).
